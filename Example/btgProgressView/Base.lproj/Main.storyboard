@@ -1,31 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8tP-El-iFn">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <scene sceneID="TT4-NS-KON">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="BTGViewController" sceneMemberID="viewController">
+                <viewController id="8tP-El-iFn" customClass="BTGViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                        <viewControllerLayoutGuide type="top" id="Cm8-jC-Mj6"/>
+                        <viewControllerLayoutGuide type="bottom" id="LLu-7i-SXA"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                    <view key="view" contentMode="scaleToFill" id="9E7-Xf-dR3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NN1-7N-T5P">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JNB-Mv-Jba" customClass="BTGProgressView">
+                                        <rect key="frame" x="20" y="323.5" width="303" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="jah-gk-1Xd"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="addPoint" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </progressView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JNB-Mv-Jba" secondAttribute="trailing" constant="20" id="J5f-oK-qzN"/>
+                                    <constraint firstItem="JNB-Mv-Jba" firstAttribute="centerY" secondItem="NN1-7N-T5P" secondAttribute="centerY" id="ndm-SL-Mff"/>
+                                    <constraint firstItem="JNB-Mv-Jba" firstAttribute="leading" secondItem="NN1-7N-T5P" secondAttribute="leading" constant="20" id="rFC-HS-cH3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NN1-7N-T5P" firstAttribute="top" secondItem="Cm8-jC-Mj6" secondAttribute="bottom" id="GEc-Oi-jOI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NN1-7N-T5P" secondAttribute="trailing" id="Lxq-Xy-SZh"/>
+                            <constraint firstItem="NN1-7N-T5P" firstAttribute="leading" secondItem="9E7-Xf-dR3" secondAttribute="leadingMargin" id="MCc-Z4-47N"/>
+                            <constraint firstItem="LLu-7i-SXA" firstAttribute="top" secondItem="NN1-7N-T5P" secondAttribute="bottom" id="v89-MV-bTw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressView" destination="JNB-Mv-Jba" id="PE6-Me-IQ9"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bPO-I9-Qem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="504" y="360"/>
         </scene>
     </scenes>
 </document>

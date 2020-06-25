@@ -7,6 +7,7 @@
 //
 
 #import "BTGViewController.h"
+@import btgProgressView;
 
 @interface BTGViewController ()
 
@@ -17,7 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [_progressView setGradientWithStartColor:[UIColor redColor] andEndColor:[UIColor blueColor]];
+    [_progressView setProgress:0.7 animated:NO];
+    [_progressView setTrackTintColor:[UIColor colorWithRed:0. green:0. blue:0. alpha:0.1]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,7 +7,11 @@
 //
 
 @import UIKit;
+@import btgProgressView;
 
 @interface BTGViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet BTGProgressView *progressView;
+
 
 @end

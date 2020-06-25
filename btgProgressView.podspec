@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'btgProgressView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of btgProgressView.'
+  s.summary          = 'Gradient progress view'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Gradient progress view with a white circle that indicates te end of the progress
                        DESC
 
   s.homepage         = 'https://github.com/manustarck/btgProgressView'

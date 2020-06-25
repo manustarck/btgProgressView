@@ -1,0 +1,16 @@
+PODS:
+  - btgProgressView (0.1.0)
+
+DEPENDENCIES:
+  - btgProgressView (from `../`)
+
+EXTERNAL SOURCES:
+  btgProgressView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  btgProgressView: 728c01698574e68a92d2bd0feb0113df623023e3
+
+PODFILE CHECKSUM: 917cbc0f1549d184b88037476a67a73abe84ed32
+
+COCOAPODS: 1.9.3
